@@ -10,5 +10,9 @@ namespace ETickets.Models
         public string ProfilePictureUrl { get; set; }
         public string FullName { get; set; }
         public string Bio { get; set; }
+
+        //relations
+
+        public ICollection<ActorMovie>? ActorMovies { get; set; }
     }
 }
